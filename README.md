@@ -1,0 +1,1 @@
+Trying to make this better than SOTA (SignalP 6.0)
