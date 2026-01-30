@@ -23,12 +23,3 @@ df = pd.DataFrame(data=data, columns=["entry_id", "kingdom", "sp_type", "sequenc
 df.to_csv(f"{args.filepath}.csv", index=False)
 
 print(f"Saved {len(df)} to {args.filepath}.csv")
-
-print("Kingdom Counts")
-print(df["kingdom"].value_counts())
-
-df["kingdom"].value_counts().plot(kind="bar", figsize=(12, 8))
-plt.xlabel("Kingdom")
-plt.ylabel("Count")
-plt.xticks(rotation=45)
-plt.savefig("image.png")
